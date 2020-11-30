@@ -12,7 +12,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import device from '../responsive/Device';
-import ForecastHour from './ForecastHour';
+// import ForecastHour from './ForecastHour';
 import ResultFadeIn from './ResultFadeIn';
 import BigLabel from './BigLabel';
 // import MediumLabel from './MediumLabel';
@@ -145,7 +145,6 @@ const Result = ({ weather }) => {
     wind,
     highestTemp,
     lowestTemp,
-    forecast,
   } = weather;
 
   // const forecasts = forecast.map(item => (
