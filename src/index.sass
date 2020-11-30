@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap')
+*
+  box-sizing: border-box  
+  padding: 0
+  margin: 0  
+  font-family: 'Recursive', sans-serif
+
+body
+  min-height: 100vh
+  margin: 0 15px
+  position: relative
+  background: #1d2d50
+  @media (min-width: 768px)
+    margin: 0 20px
+
+  &:before
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+
+
+
+.weather-app
+  height: 100%
+  margin: 0 auto
+  position: relative
+
+
+/* Colors: https://coolors.co/4f075a-820f99-f6af09-f8c630
+
+\:root
+  --primary:#1e5f74
+  --primary-dark:#133b5c
+  --dark:#2b202f
+  --gray:#9f9ea0
+
+
+h1
+  font-size: 30px
+  margin: 0 0 24px 0
+  padding: 16px 24px
+
+  /* background: linear-gradient(169deg, var(--primary), var(--primary-dark));
+  background-color: var(--primary)
+  color: #ffffff
+  text-align: center
+  border-bottom: 3px solid #1e5f74
+
+h3
+  color: var(--primary-dark)
+
+form, h3
+  padding: 0 16px
+
+input, textarea
+  width: 300px
+  border-radius: 4px
+  border: 1px solid var(--gray)
+
+input:hover, textarea:hover
+  border-color: var(--dark)
+
+input
+  margin: 4px 0 12px 0
+  padding: 4px 8px
+
+textarea
+  margin-top: 4px
+  padding: 8px
+  height: 160px
+  resize: none
+
+button
+  padding: 4px 12px
+  border: none
+  background: var(--primary)
+  color: #ffffff
+  cursor: pointer
+  border-radius: 4px
+  border-bottom: 3px solid #1e5f74
+
+  &:hover
+    background: var(--primary-dark)
+    border-color: #4f075a
+
+form button
+  margin-top: 8px
+  padding: 6px 12px
+
+hr
+  margin: 24px 16px
+  height: 1px
+  border: 0
+  background: var(--gray)
+
+span
+  margin-top: 6px
+  display: inline-block
+
+ul
+  margin: 16px 0
+  padding: 0 48px
+  list-style: none
+
+li button
+  margin-left: 8px
+  padding: 2px 8px
+  background: transparent
+  border: 1px solid var(--primary-dark)
+  color: var(--primary-dark)
+
+  &:hover
+    background: var(--primary-dark)
+    color: #ffffff
+
+  
