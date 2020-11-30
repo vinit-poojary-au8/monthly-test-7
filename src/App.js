@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import NotePosts from './components/Notes';
+// import NotePosts from './components/Notes';
 import Login from './components/Login';
 import { GoogleLogout } from "react-google-login";
 import { logOutUser } from "./redux/actions/userAction";
-import WeatherApp from './page/WeatherApp';
+// import WeatherApp from './page/WeatherApp';
 import HomePage from './page/HomePage';
 
 

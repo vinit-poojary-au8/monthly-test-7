@@ -15,7 +15,7 @@ import device from '../responsive/Device';
 import ForecastHour from './ForecastHour';
 import ResultFadeIn from './ResultFadeIn';
 import BigLabel from './BigLabel';
-import MediumLabel from './MediumLabel';
+// import MediumLabel from './MediumLabel';
 import SmallLabel from './SmallLabel';
 import Text from './Text';
 
@@ -111,25 +111,25 @@ const WeatherDetail = styled.div`
   }
 `;
 
-const ForecastWrapper = styled.div`
-  flex-basis: 100%;
-  margin: 20px 0;
-  overflow: hidden;
-`;
+// const ForecastWrapper = styled.div`
+//   flex-basis: 100%;
+//   margin: 20px 0;
+//   overflow: hidden;
+// `;
 
-const Forecast = styled.div`
-  position: relative;
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  scrollbar-color: lightgray #ffffff;
-  scrollbar-width: thin;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  @media ${device.laptop} {
-    order: 4;
-  }
-`;
+// const Forecast = styled.div`
+//   position: relative;
+//   display: flex;
+//   overflow-x: scroll;
+//   overflow-y: hidden;
+//   scrollbar-color: lightgray #ffffff;
+//   scrollbar-width: thin;
+//   margin-top: 20px;
+//   padding-bottom: 20px;
+//   @media ${device.laptop} {
+//     order: 4;
+//   }
+// `;
 
 const Result = ({ weather }) => {
   const {
@@ -148,16 +148,16 @@ const Result = ({ weather }) => {
     forecast,
   } = weather;
 
-  const forecasts = forecast.map(item => (
-    <ForecastHour
-      key={item.dt}
-      temp={Math.floor(item.main.temp * 1) / 1}
-      icon={item.weather[0].icon}
-      month={item.dt_txt.slice(5, 7)}
-      day={item.dt_txt.slice(8, 10)}
-      hour={item.dt_txt.slice(11, 13) * 1}
-    />
-  ));
+  // const forecasts = forecast.map(item => (
+  //   <ForecastHour
+  //     key={item.dt}
+  //     temp={Math.floor(item.main.temp * 1) / 1}
+  //     icon={item.weather[0].icon}
+  //     month={item.dt_txt.slice(5, 7)}
+  //     day={item.dt_txt.slice(8, 10)}
+  //     hour={item.dt_txt.slice(11, 13) * 1}
+  //   />
+  // ));
 
   let weatherIcon = null;
 
