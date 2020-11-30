@@ -22,7 +22,7 @@ function App({user, logOutUser}) {
     <div className="App">
       {!user ?
       <Login/> :  <GoogleLogout
-      clientId='249911573207-6d8rhfrbq2n9p1tgub9g5of8bt19rvea.apps.googleusercontent.com'
+      clientId='249911573207-aqnueua6d7ril0audjh5oiireo2q13sj.apps.googleusercontent.com'
       buttonText="Logout"
       onLogoutSuccess={handleLogoutSuccess}
       onFailure={handleLogoutFailure}
